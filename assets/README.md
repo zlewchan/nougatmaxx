@@ -1,0 +1,2 @@
+catfacts.txt to polska wersja: https://github.com/itvends/web/blob/master/itvends.com/catfacts.txt
+Przetłumaczone przez DeepL, jeśli pojawiają się jakieś błędy prosimy o zgłoszenie przez issue lub stworzenie pull requesta, dziękujemy.
