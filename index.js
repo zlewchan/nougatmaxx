@@ -8,6 +8,12 @@ let nodiscord = [
     'Kiedy będzie Discord? Jak firma, której nazwy nie wolno wymawiać będzie miała stabilne API',
     'Top 5 rzeczy ktore nigdy sie nie stana:\n1. Discord Wezuwiusza'
 ]
+let roll = [
+    "Tak",
+    "Nie",
+    "Może",
+    "Xiaomi lepsze"
+]
 
 function RandomFromArray(array) {
     return array[Math.floor(Math.random() * array.length)]
@@ -15,12 +21,18 @@ function RandomFromArray(array) {
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 
+// Garbage
 bot.start((ctx) => ctx.reply('Dzień dobry!'))
+
+bot.command('roll', async (ctx) => {
+    ctx.reply("Odpowiedź to: " + RandomFromArray(roll))
+})
 
 bot.command('catfact', async (ctx) => {
     ctx.reply(RandomFromArray(catfacts));
 })
 
+// Filters
 bot.on('message', async ctx => { 
     let content = ctx.message.text;
     if (content !== undefined && content.toLowerCase().includes('discord')) {
