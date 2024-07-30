@@ -32,6 +32,11 @@ bot.command('catfact', async (ctx) => {
     ctx.reply(RandomFromArray(catfacts));
 })
 
+bot.command("zrzutbazy", ctx =>
+	ctx.replyWithPhoto({ url: "https://mobidziennik.pl/grafika/forbidden.jpg" }),
+);
+
+
 // Filters
 bot.on('message', async ctx => { 
     let content = ctx.message.text;
