@@ -262,3 +262,4 @@ Kiedy twój kot ociera się o ciebie, w rzeczywistości oznacza cię jako „swo
 Chociaż wiele kotów lubi mleko, u niektórych wywołuje ono biegunkę.
 Dlaczego ludzie mają koty? Jedna z ankiet, w której przeanalizowano powody, dla których ludzie mają koty, wykazała następujące: towarzystwo/komfort 27%, stres/obniżenie ciśnienia krwi 22%, coś do kochania/poczucie bycia potrzebnym 9%, łagodzi depresję/poprawia nastrój 10%, przedmiot komunikacji/stymuluje zainteresowanie 8%.
 Tętno kota sprawdza się po wewnętrznej stronie tylnej części uda, gdzie noga łączy się z ciałem. Norma dla kotów: 110-170 uderzeń na minutę.
+function getcatfact() { return catfacts[Math.floor(Math.random() * catfacts.length)]; }
