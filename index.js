@@ -46,7 +46,7 @@ bot.on('message', async ctx => {
     }
 })
   
-bot.launch()
+bot.launch({ dropPendingUpdates: true }, () => console.log("Bot is starting!"));
 
 // Enable graceful stop
 process.once('SIGINT', () => bot.stop('SIGINT'))
