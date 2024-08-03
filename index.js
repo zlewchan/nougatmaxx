@@ -35,9 +35,8 @@ bot.command('catfact', async (ctx) => {
 })
 
 bot.command("zrzutbazy", ctx =>
-	ctx.replyWithPhoto({ url: "https://mobidziennik.pl/grafika/forbidden.jpg" }),
+	ctx.sendSticker("CAACAgQAAxkBAAIZ2mauiLbJZUfaChOCkMYRARgeQiS1AAKYEgACyqlwUdwpnNbpDrfqNQQ")
 );
-
 
 // Filters
 bot.on('message', async ctx => { 
