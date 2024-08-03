@@ -1,6 +1,8 @@
 const { Telegraf } = require('telegraf')
 const fs = require('fs');
 
+require('dotenv').config()
+
 let catfacts = fs.readFileSync('assets/catfacts.txt').toString('UTF8').split('\n');
 let nodiscord = [
     'Nie planujemy posiadać Discorda.', 
