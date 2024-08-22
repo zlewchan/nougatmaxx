@@ -1,6 +1,6 @@
 services:
   bot:
-    image: ghcr.io/wezuwiusz/wezuwiuszowybot
+    image: ghcr.io/zlewchan/NougatMaxx
     restart: unless-stopped
     env_file:
       - .env
